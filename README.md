@@ -1,0 +1,2 @@
+# jscompressor
+for minimized js
