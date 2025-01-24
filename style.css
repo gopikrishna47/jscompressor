@@ -1425,3 +1425,85 @@ body.office {
   position: absolute;
   top: 56px;
 }
+
+.body-active {
+  display: none !important;
+}
+
+.logo-active {
+  display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .header .logo img {
+    max-width: 75% !important;
+    filter: invert(0) !important;
+    transition: all 0.3s ease !important;
+    bottom: 26px;
+    right: 50px;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .logo img {
+    max-width: 100% !important;
+    filter: invert(0) !important;
+    transition: all 0.3s ease !important;
+    position: relative;
+    top: 70px;
+    right: 33px;
+  }
+}
+
+body.nav-active .nav:before,
+body.nav-active .nav:after {
+  transform: translateX(-3%) translateY(-7%) !important;
+}
+
+@media screen and (max-width: 768px) {
+  body.nav-active .nav:before,
+  body.nav-active .nav:after {
+    transform: translateX(-6%) translateY(-7%) !important;
+  }
+}
+
+.nav .nav__content:before {
+  background: url(https://macadamiabuds.com/wp-content/uploads/2025/01/menu_scroll-scaled.avif)
+    no-repeat center bottom !important;
+	 animation: menubgmovingback 200s linear infinite !important;
+}
+
+.nav .nav__content:after {
+  background: url(https://macadamiabuds.com/wp-content/uploads/2025/01/menu_scroll_2-scaled.avif)
+    no-repeat center !important;
+	animation: menubgmoving 200s linear infinite !important;
+}
+
+@keyframes menubgmoving {
+  0% {
+    background-position: center bottom !important;
+  }
+
+  50% {
+    background-position: center top !important;
+  }
+
+  100% {
+    background-position: center bottom !important;
+  }
+}
+
+@keyframes menubgmovingback {
+  0% {
+    background-position: center top !important;
+  }
+
+  50% {
+    background-position: center bottom !important;
+  }
+
+  100% {
+    background-position: center top !important;
+  }
+}
