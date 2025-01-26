@@ -904,7 +904,8 @@ body {
   height: 100%;
   right: 0;
   top: 0;
-  background: url("../img/menu_scroll_2.webp") no-repeat center bottom;
+  background: url(https://macadamiabuds.com/wp-content/uploads/2025/01/menu_scroll_2-scaled.avif)
+    no-repeat center !important;
   background-size: cover;
   animation: menubgmoving 200s linear infinite;
   transition: all 0.3s ease;
@@ -939,7 +940,7 @@ body {
   height: 100%;
   right: 175px;
   top: 0;
-  background: url("../img/menu_scroll.webp") no-repeat center bottom;
+  background: url(https://macadamiabuds.com/wp-content/uploads/2025/01/menu_scroll-scaled.avif) no-repeat center bottom !important;
   background-size: cover;
   animation: menubgmovingback 200s linear infinite;
   transition: all 0.3s ease;
@@ -1106,7 +1107,14 @@ body.nav-active .nav {
 
 body.nav-active .nav:before,
 body.nav-active .nav:after {
-  transform: translateX(0%) translateY(0%);
+  transform: translateX(-3%) translateY(-3%) !important;
+}
+
+@media screen and (max-width: 768px) {
+  body.nav-active .nav:before,
+  body.nav-active .nav:after {
+    transform: translateX(-6%) translateY(-3%) !important;
+  }
 }
 
 body.nav-active .nav:after {
@@ -1211,6 +1219,7 @@ body.office {
   max-width: 100%;
   filter: invert(0);
   transition: all 0.3s ease;
+  bottom: 26px;
 }
 
 .header .logo.opacity img {
@@ -1440,7 +1449,7 @@ body.office {
     max-width: 75% !important;
     filter: invert(0) !important;
     transition: all 0.3s ease !important;
-    bottom: 26px;
+    top: 26px;
     right: 50px;
     position: relative;
   }
@@ -1455,4 +1464,10 @@ body.office {
     top: 70px;
     right: 33px;
   }
+}
+
+.elementor-kit-8 button:hover, .elementor-kit-8 button:focus, .elementor-kit-8 input[type="button"]:hover, .elementor-kit-8 input[type="button"]:focus, .elementor-kit-8 input[type="submit"]:hover, .elementor-kit-8 input[type="submit"]:focus, .elementor-kit-8 .elementor-button:hover, .elementor-kit-8 .elementor-button:focus {
+  color: var(--e-global-color-e052ba3);
+  background-color: transparent !important;
+  border-radius: 0px 0px 0px 0px;
 }
