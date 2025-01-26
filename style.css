@@ -694,52 +694,6 @@ body {
     visibility: visible !important;
   }
 }
-
-.main_menu .menu_links a {
-  text-decoration: none !important;
-  display: inline-block !important;
-  padding: 24px 0 8px !important;
-  position: relative !important;
-  color: var(--white) !important;
-  font-weight: 400 !important;
-  font-size: 31px !important;
-  line-height: 35px !important;
-  position: relative !important;
-  z-index: 1 !important;
-  margin-bottom: 20px !important;
-  transition: all 0.3s ease !important;
-  border-radius: 100px !important;
-  -webkit-border-radius: 100px !important;
-  -moz-border-radius: 100px !important;
-  -khtml-border-radius: 100px !important;
-}
-
-.main_menu .menu_links a:last-child {
-  margin-bottom: 0 !important;
-}
-
-@media (min-width: 768px) {
-  .main_menu .menu_links a {
-    font-size: 54px !important;
-    line-height: 50px !important;
-    padding: 32px 0 0 0 !important;
-  }
-}
-
-@media (min-width: 992px) {
-  .main_menu .menu_links a {
-    padding: 16px 0 0 0 !important;
-  }
-}
-
-@media (min-width: 1600px) {
-  .main_menu .menu_links a {
-    font-size: 80px !important;
-    line-height: 84px !important;
-    padding: 24px 0 0 0 !important;
-  }
-}
-
 .main_menu .social {
   width: 100% !important;
   padding: 40px 5px !important;
@@ -897,20 +851,7 @@ body {
   transition-delay: 150ms;
 }
 
-.nav .nav__content:after {
-  position: absolute;
-  content: "";
-  width: 150px;
-  height: 100%;
-  right: 0;
-  top: 0;
-  background: url(https://macadamiabuds.com/wp-content/uploads/2025/01/menu_scroll_2-scaled.avif)
-    no-repeat center !important;
-  background-size: cover;
-  animation: menubgmoving 200s linear infinite;
-  transition: all 0.3s ease;
-  transition-delay: 550ms;
-}
+
 
 @media (min-width: 768px) {
   .nav .nav__content:after {
@@ -931,20 +872,6 @@ body {
     width: 400px;
     right: 270px;
   }
-}
-
-.nav .nav__content:before {
-  position: absolute;
-  content: "";
-  width: 150px;
-  height: 100%;
-  right: 175px;
-  top: 0;
-  background: url(https://macadamiabuds.com/wp-content/uploads/2025/01/menu_scroll-scaled.avif) no-repeat center bottom !important;
-  background-size: cover;
-  animation: menubgmovingback 200s linear infinite;
-  transition: all 0.3s ease;
-  transition-delay: 550ms;
 }
 
 @media (min-width: 768px) {
@@ -1464,10 +1391,4 @@ body.office {
     top: 70px;
     right: 33px;
   }
-}
-
-.elementor-kit-8 button:hover, .elementor-kit-8 button:focus, .elementor-kit-8 input[type="button"]:hover, .elementor-kit-8 input[type="button"]:focus, .elementor-kit-8 input[type="submit"]:hover, .elementor-kit-8 input[type="submit"]:focus, .elementor-kit-8 .elementor-button:hover, .elementor-kit-8 .elementor-button:focus {
-  color: var(--e-global-color-e052ba3);
-  background-color: transparent !important;
-  border-radius: 0px 0px 0px 0px;
 }
